@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>AAG Mapathon</title>
+		<title>Mapathon.us</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="An event to celebrate and actively participate in open mapping for the Sustainable Development Goals" />
 		<meta name="keywords" content="" />
@@ -58,8 +58,8 @@
     $(document).ready(function() {
 
         $('#fullpage').fullpage({
-            anchors:['splashPage', 'aboutPage', 'projectPage', 'agendaPage', 'footerPage'],
-            sectionsColor: ['#333', 'whitesmoke', '#7BAABE', 'whitesmoke', '#000'],
+            anchors:['splashPage', 'aboutPage', 'projectPage', 'footerPage'],
+            sectionsColor: ['#333', 'whitesmoke', '#7BAABE', '#000', '#000'],
             loopHorizontal: false,
             menu: '#myMenu',
         });
@@ -74,46 +74,18 @@
 #header-wrapper {
 	padding-top: 0px;
 }
-#banner {
-	padding-top: 1em;
-	min-height: 500px;
-	margin-top: 0px;
-  position: relative;
 
-}
-
-#banner header {
-	background: transparent;
-	margin-top: 5em;
-	text-align: left;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-#banner h1,
-#banner h2,
-#banner h4,
-#banner header p {
-	color: white;
+#title {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px
 }
 
-#banner h1 {
-	font-size: 60px;
-	margin-top: 30px;
-	margin-bottom: 30px
+#title h2{
+  color: white;
 }
 
-#banner .button {
-	margin-top: 30px;
-}
-
-#banner header p {
-	font-size: 18px;
-	width: 70%;
-}
-.quiet {
-	opacity: 0.9;
-}
-#banner a {
+#title h1{
   color: white;
 }
 
@@ -221,8 +193,8 @@
       <li data-menuanchor="projectPage">
         <a href="/index.html#projectPage">Mapping Project</a>
       </li>
-
-      <li data-menuanchor="agendaPage"><a href="/index.html#agendaPage" id="agenda-button">Agenda</a></li>
+<!--
+      <li data-menuanchor="agendaPage"><a href="/index.html#agendaPage" id="agenda-button">Agenda</a></li>-->
 
       <li>
       <a href="http://twitter.com/home?status=Join me at %23WHMaps for a fun way to learn open mapping and to join a global network of civic innovators mapathon.us"><img src="/assets/images/TwitterLogo.png" width="32" style="top:10px;position:relative"></a>
@@ -236,24 +208,23 @@
 
       <div class="section">
         <div class="slide active">
-					<section id="banner">
-  						
-							<header>
-  								<h2>Calling All Citizen Mappers</h2>
+          <div id="title">
+                  <h2>Calling All Citizen Mappers</h2>
                   <h1>White House Mapathon</h1>
-  								<p class="quiet" style="font-size:20px">An event to celebrate and actively participate in open mapping for the Sustainable Development Goals</p>
+                  <div class="quiet" style="font-size:20px">An event to celebrate and actively participate in open mapping for the Sustainable Development Goals</div> 
 
-                  <p>
+                  July 7<sup>th</sup>, 2016 #WHMaps </br>
 
-                  <p>July 7<sup>th</sup>, 2016 #WHMaps</p>
-
-  								<a href="/index.html#projectPage" class="button">Get Started Mapping</a>
+                  <a href="/index.html#projectPage" class="button">Get Started Mapping</a>
   <!--
                   <div class="attribution-block">Map designed by <a href="https://www.mapbox.com/about/team/#eric-fischer">Eric Fisher</a> <a href="https://www.mapbox.com/about/maps/">©Mapbox</a> <a href="http://www.openstreetmap.org/about/">©OpenStreetMap</a></div>
   -->
-							</header>
-					</section>
-          </div>
+              </div>
+					<div id="banner">
+  						
+							
+					</div>
+        </div>
 
     </div>
 
@@ -283,7 +254,7 @@
                       </div>
         							<div id="summary-section" style="padding-left: 80px;padding-right: 80px;">
           								<ul>
-          									<li><a href="https://wharman.typeform.com/to/K32yyT" class="button big">Register a Satellite Event</a></li>
+          									<li><a href="https://docs.google.com/a/mapbox.com/forms/d/1o7uJmGYEhFYNUGV13fPThTbwW7zINflxq99cHKHDmJ0/viewform?c=0&w=1" class="button big">Register a Satellite Event</a></li>
                             <div style="margin-left:50px;margin-right:50px;margin-top:50px;margin-bottom:50px">
                               Host a satellite event. Your event doesn’t have to be at the exact same time as the White House event. We encourage you to schedule a time and place that works for you. Invite your local citizen cartographer friends, and register your project. 
                             </div>
@@ -367,17 +338,18 @@
 	</div>
 </div>
 
+<!--
 <div class="section">
 	<div class="row" id="agenda">
 		<div class="12u">
 			<div class="8u -2u skel-cell-important">
-				<!-- Content -->
+
 				<article class="box post">
 					<div id="summary-text">
 						<h2>Agenda</h2>
 						<br>
 						<div style="text-align:left;margin-left:50px;margin-right:50px">
-							<h3>1:15pm - Presentations and remarks -- tune in via the livestream starting at 1:15pm EDT. </h3>
+							<h3>1:15pm - Presentations and remarks - tune in via the livestream starting at 1:15pm EDT. </h3>
 							<p>
 							<ul style="list-style-type:disc">
 								<li>Megan Smith, United States Chief Technology Officer</li>
@@ -395,7 +367,7 @@
 		</div>
 	</div>
 </div>
-
+-->
 
 
 
@@ -412,7 +384,7 @@
 		<div style="position:relative">
 		    <a href='http://mapgive.state.gov/' target="blank"><img src="/assets/images/mapgive-logo.png" alt="" /></a>
 
-		    <a href='https://www.peacecorps.gov/' target="blank"><img src="/assets/images/peace-corps.png" alt="" style="width: 140px;margin-left: 30px;"/></a>
+		    <a href='https://www.peacecorps.gov/' target="blank"><img src="/assets/images/peace-corps.jpg" alt="" style="width: 140px;margin-left: 30px;"/></a>
 		</div>
 		<div>
 		    <a href='https://www.usaid.gov/' target="blank"><img src="/assets/images/usaid.png" alt="" style="width:360px"/></a>
@@ -432,6 +404,8 @@
 							<p>
 						</div>
 				</div>
+
+				<!--
 				<div class="3u">
 						<header>
 							<h2>Contact Us</h2>
@@ -444,7 +418,7 @@
 							</li>
 						</ul>
 				</div>
-
+-->
 		</div>
 	</div>
 </div>
